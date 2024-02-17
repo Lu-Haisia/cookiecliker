@@ -83,21 +83,18 @@ function addcookie(){
                 yscore+= addnbrcookie
                 addnbrcookie*=2
                 addPrix *= 3// Rédéfinir le prix de l'upgrade
-                console.log(temps)
             }
             else{
                 temps = 1000
                 yscore+= addnbrcookie
                 addnbrcookie*=3
                 addPrix *= 2// Rédéfinir le prix de l'upgrade
-                console.log(temps)
             }
-            console.log(temps)// Test
+
             addePrix.textContent = addPrix
             affichage.textContent = yscore
             addCookies.textContent = addnbrcookie/2
             setInterval(() => { 
-                console.log('temps', temps)
                 if (boucleok == true){
                     yscore+= addnbrcookie/2 
                     affichage.textContent = yscore
